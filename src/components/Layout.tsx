@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 
-import Navigation from "./Navigation";
+const Navigation = React.lazy(() => import("./Navigation"));
 
 interface LayoutProps {
   children: NonNullable<React.ReactNode>;
@@ -9,7 +9,9 @@ interface LayoutProps {
 function Layout(props: LayoutProps) {
   return (
     <>
-      <Navigation />
+      <Suspense fallback="">
+        <Navigation />
+      </Suspense>
       <main>{props.children}</main>
     </>
   );

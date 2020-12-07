@@ -64,6 +64,6 @@ export const getCards = async (): Promise<Card[]> => {
       <>An all-in-one platform for automating modern web projects.</>
     ),
   ];
-  await new Promise((r) => setTimeout(r, 1500));
+  await new Promise((r) => setTimeout(r, 1000));
   return data;
 };

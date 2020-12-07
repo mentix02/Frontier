@@ -12,5 +12,6 @@ export const getToken = async (
   for (let i = 0; i < length; ++i) {
     token += pool.charAt(Math.floor(Math.random() * username.length));
   }
+  await new Promise((r) => setTimeout(r, 1500));
   return token;
 };

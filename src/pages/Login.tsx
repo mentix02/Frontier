@@ -92,11 +92,9 @@ function Login(props: LoginProps) {
     e.preventDefault();
     setLoading(true);
     const token = await getToken(credentials);
-    setTimeout(() => {
-      dispatch(logIn(token, credentials.username));
-      setLoading(false);
-      history.push(fromPath);
-    }, 1000);
+    dispatch(logIn(token, credentials.username));
+    setLoading(false);
+    history.push(fromPath);
   };
 
   return (

@@ -64,8 +64,8 @@ function Home() {
             color="textSecondary"
             paragraph
           >
-            A React template using Typescript made with Redux, react-router-dom,
-            and Material UI.
+            A React template written in TypeScript built with Material UI using
+            Redux and react-router-dom.
           </Typography>
           <div className={classes.heroButtons}>
             <Grid container spacing={2} justify="center">

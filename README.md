@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Frontier
+
+A React template using Typescript made with Redux, react-router-dom, and Material UI.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
